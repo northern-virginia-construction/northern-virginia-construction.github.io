@@ -37,6 +37,8 @@
         figure{
             margin-inline-start:0;
             margin-inline-end:0;
+            max-width: 640px;
+            margin: auto;
         }
         #recommendations blockquote cite img{
             width: 4rem;
@@ -119,6 +121,9 @@
         #demonstration{
             display: none;
         }
+        #bios > dl > dt{
+            font-weight: bold;
+        }
         @media screen and (min-width: 720px){
             nav{
                 position:fixed;
@@ -147,6 +152,14 @@
                 background-color: rgba(255,255,255,0.75);
                 position: absolute;
                 padding: 0.5rem;
+            }
+            #bios{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #bios > dl{
+                width:33%;
+                padding: 1rem;
             }
             header, main > section{
                 padding-top: 2.25rem;
@@ -184,6 +197,7 @@
         <section id="introduction">
             <header><h1>Northern Virginia Construction and Remodeling Experts</h1></header>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam veniam fugiat est! Fugiat, magni, iusto aut neque ipsam possimus autem minima nostrum quas illum recusandae repudiandae voluptate quibusdam enim assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum dolore obcaecati saepe, deleniti unde velit nisi dolores a dignissimos cum iure qui corporis reprehenderit eum quod magni ratione eaque?</p>
         </section>
         <!-- video / slides -->
         <aside id="demonstration">
@@ -192,7 +206,7 @@
     
         <!-- testimonials -->
         <section id="recommendations">
-            <header><h1>Recommendations from our Clients</h1></header>
+            <header><h1>Recommended by our Clients</h1></header>
             <section>
                 <header><img src="/photos/clean-modern-open-plan-kitchen.jpg" alt="">
                     <h1>Modern Kitchen Remodel 
@@ -255,10 +269,44 @@
             <header>
                 <h1>Meet Our Staff</h1>
             </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum alias nulla quo esse eius necessitatibus, consectetur beatae ipsam neque! Fuga, nesciunt! Tenetur corporis mollitia molestias! Consectetur dolores nam repellendus.</p>
             <figure>
                 <img src="/company/staff-photo-2019-cropped.jpg" alt="">
                 <figcaption>Rosa Emanuel, Lead Design; Robert Santiago, Junior Contractor; Lexi Small, Customer Service; Maya Rodriguez, Office Manager; Anthony Smith, Lead Contractor.</figcaption>
             </figure>
+            <div id="bios">
+                <dl>
+                    <dt>Anthony Smith</dt>
+                    <dd>George Mason University, Civil and Infrastructure Engineering, MS</dd>
+                    <dd>NOVA, Construction Management Technology, A.A.S.</dd>
+                    <dd>Award frome somewhere cool</dd>
+                    <dd>Professional association</dd>
+                </dl>
+                <dl>
+                    <dt>Maya Rodriguez</dt>
+                    <dd>Lorem ipsum dolor sit amet.</dd>
+                    <dd>Tenetur impedit blanditiis consequatur similique!</dd>
+                    <dd>Consequuntur voluptas nam tempora impedit?</dd>
+                </dl>
+                <dl>
+                    <dt>Rosa Emanuel</dt>
+                    <dd>Lorem ipsum dolor sit amet.</dd>
+                    <dd>Quasi saepe labore corporis soluta.</dd>
+                    <dd>Voluptatem dolorum error harum repellendus?</dd>
+                </dl>
+                <dl>
+                    <dt>Lexi Small</dt>
+                    <dd>Lorem ipsum dolor sit amet.</dd>
+                    <dd>Dicta obcaecati quidem ducimus molestias.</dd>
+                    <dd>Veritatis tenetur vel voluptatum cumque?</dd>
+                </dl>
+                <dl>
+                    <dt>Robert Santiago</dt>
+                    <dd>George Mason University, Civil and Infrastructure Engineering, BS</dd>
+                    <dd>Praesentium sequi sit sed id?</dd>
+                    <dd>Reiciendis sit reprehenderit expedita rem?</dd>
+                </dl>
+            </div>
         </section>
         <!-- contact form -->
         <section id="consultations">
