@@ -56,7 +56,16 @@
         body > header{
             text-align: center;
             font-family:serif;
-            border-bottom: solid 1px #ccccff;
+            background-image:linear-gradient(180deg,rgba(255,255,255,0.35),rgba(255,255,255,0.65)), url('/photos/long-modern-kitchen-with-patio.jpg');
+            background-position:center;
+            background-size: cover;
+            padding: 4rem;
+            text-shadow:1px 2px 2px #cccccc;
+        }
+        body > header > p{
+            background:rgba(255, 255, 255, 0.66);
+            padding: 1em;
+            border: solid 1px #ffffff;
         }
         h1, h2, h3, h4, h5, h6{
             font-family: serif;
@@ -106,6 +115,9 @@
         dd{
             margin: 0;
             padding: 0;
+        }
+        #demonstration{
+            display: none;
         }
         @media screen and (min-width: 720px){
             nav{
@@ -161,7 +173,6 @@
     <nav>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#demonstration">Demonstration</a></li>
             <li><a href="#recommendations">Recommendations</a></li>
             <li><a href="#staff">Staff</a></li>
             <li><a href="#consultations">Consultations</a></li>
