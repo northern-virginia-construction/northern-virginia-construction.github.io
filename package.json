@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mikeritter/construction-company-single-page/issues"
   },
-  "homepage": "https://github.com/mikeritter/construction-company-single-page#readme"
+  "homepage": "https://github.com/mikeritter/construction-company-single-page#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
 }
